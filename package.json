@@ -1,0 +1,20 @@
+{
+  "name": "glyphstack",
+  "version": "1.0.0",
+  "description": "GlyphStack - AI-native developer studio creating cool apps for cool people",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "glyphstack",
+    "app-development",
+    "ios",
+    "macos",
+    "ai-native"
+  ],
+  "author": "Brooke J Lacey, LLC",
+  "license": "UNLICENSED",
+  "private": true
+}

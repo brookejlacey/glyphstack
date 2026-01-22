@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlyphStack | AI-Native App Development</title>
+    <meta name="description" content="GlyphStack - AI-native developer studio creating cool apps for cool people.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">glyphstack@dev: ~</div>
+        </div>
+        <div class="terminal-body">
+            <div class="output">
+                <pre class="ascii-logo">
+   _____ _             _     _____ _             _
+  / ____| |           | |   / ____| |           | |
+ | |  __| |_   _ _ __ | |__| (___ | |_ __ _  ___| | __
+ | | |_ | | | | | '_ \| '_ \\___ \| __/ _` |/ __| |/ /
+ | |__| | | |_| | |_) | | | |___) | || (_| | (__|   <
+  \_____|_|\__, | .__/|_| |_|____/ \__\__,_|\___|_|\_\
+            __/ | |
+           |___/|_|
+                </pre>
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="response">
+                    <span class="highlight">GlyphStack</span> — AI-native developer studio
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat mission.txt</span>
+                </div>
+                <div class="response typewriter" id="mission">
+                    Creating cool apps for cool people.
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls ./services/</span>
+                </div>
+                <div class="response services-grid">
+                    <div class="service">
+                        <span class="icon">⌘</span>
+                        <span class="name">ios-development/</span>
+                    </div>
+                    <div class="service">
+                        <span class="icon">◆</span>
+                        <span class="name">macos-apps/</span>
+                    </div>
+                    <div class="service">
+                        <span class="icon">⚡</span>
+                        <span class="name">ai-integration/</span>
+                    </div>
+                    <div class="service">
+                        <span class="icon">▲</span>
+                        <span class="name">web-platforms/</span>
+                    </div>
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat philosophy.md</span>
+                </div>
+                <div class="response code-block">
+                    <span class="comment"># Our Philosophy</span><br><br>
+                    <span class="keyword">const</span> <span class="variable">approach</span> = {<br>
+                    &nbsp;&nbsp;<span class="property">aiFirst</span>: <span class="boolean">true</span>,<br>
+                    &nbsp;&nbsp;<span class="property">humanCentered</span>: <span class="boolean">true</span>,<br>
+                    &nbsp;&nbsp;<span class="property">overEngineered</span>: <span class="boolean">false</span>,<br>
+                    &nbsp;&nbsp;<span class="property">shipping</span>: <span class="string">"fast"</span><br>
+                    };<br><br>
+                    <span class="comment">// We build software that matters.</span><br>
+                    <span class="comment">// No bloat. No BS. Just good code.</span>
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">echo $CONTACT</span>
+                </div>
+                <div class="response contact-section">
+                    <a href="mailto:hello@glyphstack.dev" class="contact-link">
+                        <span class="icon">✉</span> hello@glyphstack.dev
+                    </a>
+                </div>
+
+                <div class="line input-line">
+                    <span class="prompt">$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span class="dba">GlyphStack is a DBA of Brooke J Lacey, LLC</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
