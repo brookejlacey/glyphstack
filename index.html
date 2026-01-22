@@ -92,7 +92,7 @@
                     <span class="cap-highlight">LEGACY REVIVAL. ANY STACK. ANY ERA.</span><br>
                     <span class="cap-text">Got a dusty codebase in COBOL? A forgotten app in Objective-C?</span><br>
                     <span class="cap-text">Legacy software rotting in a repo from 2008?</span><br>
-                    <span class="cap-accent">We resurrect the dead and modernize the ancient.</span><br><br>
+                    <span class="cap-accent">We resurrect the dead and modernize the ancient.</span><br>
                     <span class="cap-text">React, Swift, Kotlin, Rust, Python, Go, .NET, Rails—</span><br>
                     <span class="cap-text">whatever your stack, we speak it fluently.</span><br>
                     <span class="cap-accent">AI-augmented development means nothing is impossible.</span>
@@ -121,9 +121,9 @@
                     <span class="command">echo $CONTACT</span>
                 </div>
                 <div class="response contact-section">
-                    <a href="mailto:hey@glyphstack.dev" class="contact-link">
-                        <span class="icon">✉</span> hey@glyphstack.dev
-                    </a>
+                    <button class="contact-link" onclick="copyEmail()" id="email-btn">
+                        <span class="icon">✉</span> <span id="email-text">hey@glyphstack.dev</span>
+                    </button>
                 </div>
 
                 <div class="line input-line">

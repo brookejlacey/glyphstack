@@ -121,7 +121,20 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 });
 
+// Copy email to clipboard
+function copyEmail() {
+    const email = 'hey@glyphstack.dev';
+    navigator.clipboard.writeText(email).then(() => {
+        const emailText = document.getElementById('email-text');
+        const originalText = emailText.textContent;
+        emailText.textContent = 'Copied!';
+        setTimeout(() => {
+            emailText.textContent = originalText;
+        }, 2000);
+    });
+}
+
 // Console message for fellow developers
-console.log('%c⌘ GlyphStack', 'font-size: 24px; font-weight: bold; color: #00ff00;');
+console.log('%c⌘ GlyphStack Labs', 'font-size: 24px; font-weight: bold; color: #00ff00;');
 console.log('%cAI-native developer studio', 'font-size: 14px; color: #00ffff;');
-console.log('%cWant to work together? hello@glyphstack.dev', 'font-size: 12px; color: #ffff00;');
+console.log('%cWant to work together? hey@glyphstack.dev', 'font-size: 12px; color: #ffff00;');
