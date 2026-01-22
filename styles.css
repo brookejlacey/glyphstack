@@ -220,8 +220,6 @@ body {
     font-weight: 700;
     text-shadow: 0 0 10px var(--accent-yellow);
     letter-spacing: 2px;
-    display: block;
-    margin-bottom: 8px;
 }
 
 .cap-text {
